@@ -1,0 +1,91 @@
+
+<program>
+    <variable-declaration>
+        <type>int</type>
+        <name>a</name>
+    </variable-declaration>
+    
+    <for>
+        <initialization>
+            <variable-declaration>
+                <type>int</type>
+                <name>b</name>
+            </variable-declaration>
+            <assignment>
+                <lhs> 
+                    <variable>
+                        <name> b </name>
+                    </variable>
+                </lhs>
+                <rhs>
+                    <literal>
+                        <int> 2 </int>
+                    </literal>
+                </rhs>
+            </assignment>
+        </initialization>
+
+        <condition>
+            <expression operation = "lessThan">
+                <operand1>
+                    <variable>
+                        <name> b </name>
+                    </variable>
+                </operand1>
+                <operand2>
+                    <literal>
+                        <int> 15 </int>
+                    </literal>  
+                </operand2>
+            </expression>
+        </condition>
+
+        <iteration>
+            <assignment>
+                <lhs> 
+                    <variable>
+                        <name> b </name>
+                    </variable>
+                </lhs>
+                <rhs>
+                    <expression operation="addition">
+                        <operand1>
+                            <variable>
+                                <name> b </name>
+                            </variable> 
+                        </operand1>
+                        <operand2>
+                            <literal>
+                                <int> 1 </int>
+                            </literal>  
+                        </operand2>
+                    </expression>
+                </rhs>
+            </assignment>
+        </iteration>
+
+        <body>
+            <assignment>
+                <lhs> 
+                    <variable>
+                        <name> a </name>
+                    </variable>
+                </lhs>
+                <rhs>
+                    <expression operation="addition">
+                        <operand1>
+                            <variable>
+                                <name> a </name>
+                            </variable> 
+                        </operand1>
+                        <operand2>
+                            <literal>
+                                <int> 10 </int>
+                            </literal>  
+                        </operand2>
+                    </expression>
+                </rhs>
+            </assignment>
+        </body>
+    </for>
+</program>
